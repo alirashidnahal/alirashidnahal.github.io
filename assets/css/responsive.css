@@ -1,0 +1,90 @@
+
+
+
+@media only screen and (max-width: 991px) {
+
+    body {
+        font-size: 14px
+    }
+
+    .profile .profile-bg-color {
+        min-height: auto;
+    }
+
+    .info {
+        margin-top: 10%;
+    }
+
+    .testimonials-box {
+        max-width: 65%;
+    }
+
+    .navigation {
+        margin: 0;
+        left: -230px;
+    }
+
+    .nav-small-screen-open {
+        left: 0;
+    }
+
+    .left-230 {
+        margin-left: 0;
+    }
+
+
+
+}
+
+@media only screen and (max-width : 768px) {
+
+    body {
+        font-size: 13px;
+    }
+
+    .profile .container {
+        padding: 50px 15px;
+    }
+
+    .testimonials-box {
+        max-width: 90%;
+    }
+
+    .comments-list {
+        padding: 0;
+    }
+
+    .social-media {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    .err-details h1 span {
+        font-size: 1em;
+    }
+
+}
+
+@media only screen and (max-width : 480px) {
+
+    body {
+        font-size: 12px;
+    }
+
+    .testimonials-box {
+        max-width: 100%;
+    }
+
+    .info h1 {
+        font-size: 3.0em;
+    }
+
+    .profile ul li a {
+        padding: 8px 5px;
+    }
+
+    .ques-link {
+        margin-top: 60px;
+    }
+}
