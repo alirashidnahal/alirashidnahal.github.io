@@ -1,0 +1,53 @@
+/* -----------------------------------------------------------------------------
+
+File:			CSS Theme Background
+Version:        1.0
+Author:			Hesham Shawky
+
+-------------------------------------------------------------------------------- */
+
+body,
+a,
+.loading-page {
+    color: #333;
+}
+
+.about p::first-letter,
+.socail-links ul li a ,
+.portfolio-list-filter ul li.active h5,
+.portfolio-item-links ul li a,
+.post:hover .share-post a,
+.share-post .socail-links ul li a,
+.nav-open,
+.nav-close,
+.contact-form input[type="submit"],
+.nav-list ul li.active a,
+.nav-list ul li.active a:hover,
+.pagination>li>a:focus,
+.pagination>li>a:hover,
+.pagination>li>span:focus,
+.pagination>li>span:hover,
+.more-post a,
+.more-post a:hover,
+.comments input[type="submit"],
+.classy-btn,
+.classy-btn:focus,
+.open-social,
+.err-details h1,
+.pricing-table li > .fa {
+    color: #fff;
+}
+
+.classy-btn:hover,
+.nav>li>a:focus, .nav>li>a:hover {
+    background: #fff;
+}
+
+.breadcrumb,
+.post,
+.portfolio-list-filter ul li h5,
+.portfolio-item,
+.pricing-table,
+.faqs .question .answer {
+    background: #eee;
+}

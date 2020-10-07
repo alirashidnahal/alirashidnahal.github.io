@@ -1,0 +1,89 @@
+/**
+ *  Main Color: #1f9cbd
+ */
+
+a:hover,
+a:focus,
+.profile h4,
+.section-title,
+.info h4 .fa,
+.details ul li .fa,
+.employment-box h5,
+.education-box h5,
+.testimonials-content p:before,
+.testimonials-content p:after,
+.testimonials-content h6 ,
+.contact-form label small,
+.post:hover .post-content a,
+.nav-list ul li a:hover,
+.breadcrumb>.active,
+.comments .comment-content header a,
+.comments form label small,
+.classy-btn:hover,
+.resume h4 .fa,
+.pricing-table .price,
+.faqs .question header .fa {
+    color: #1f9cbd;
+}
+
+.about p::first-letter,
+.socail-links,
+.progress-bar,
+.portfolio-list-filter ul li.active h5,
+.portfolio-item-links ul li a,
+.testimonials .carousel-indicators .active,
+.contact-form input[type="submit"],
+.share-post .socail-links ul li a,
+.nav-open,
+.nav-list ul li.active a,
+.pagination>.active>a,
+.pagination>.active>a:focus,
+.pagination>.active>a:hover,
+.pagination>.active>span,
+.pagination>.active>span:focus,
+.pagination>.active>span:hover,
+.pagination>li>a:focus,
+.pagination>li>a:hover,
+.pagination>li>span:focus,
+.pagination>li>span:hover,
+.more-post a,
+.comments input[type="submit"],
+.classy-btn,
+.open-social,
+.option-box .open-close,
+.tags li a,
+.err-details .err-4,
+.pricing-table li > .fa {
+    background: #1f9cbd;
+}
+
+
+.about p,
+.testimonials .carousel-indicators li,
+.contact-form .form-control:focus,
+.pagination>.active>a,
+.pagination>.active>a:focus,
+.pagination>.active>a:hover,
+.pagination>.active>span,
+.pagination>.active>span:focus,
+.pagination>.active>span:hover,
+.pagination>li>a:focus,
+.pagination>li>a:hover,
+.pagination>li>span:focus,
+.pagination>li>span:hover,
+.comments .form-control:focus,
+.resume h4,
+blockquote,
+.option-box,
+.faqs .question header .fa,
+.faqs .question header h4 {
+    border-color: #1f9cbd;
+}
+
+.profile .profile-bg-color {
+    background: rgba(31, 156, 189, 0.8);
+}
+
+.navigation {
+    background: #31485e
+}
