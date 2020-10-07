@@ -1,0 +1,931 @@
+/* -----------------------------------------------------------------------------
+
+File:			CSS Theme Base
+Version:        1.0
+Author:			Hesham Shawky
+
+Table of Contents:
+
+    0. Fonts
+	1. Document Setup
+    2. Typography
+    3. Basics
+    4. Profile Section
+    5. Resume Section
+    6. Portfolio Section
+    7. Testimonials section
+    8. Blog Section
+    9. Contact Section
+    10. Navigation
+    11. Blog page
+    12. Single post page
+
+-------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
+/* --- 0. Fonts
+/* ----------------------------------------------------------------------------- */
+/*
+ * Google Fonts
+ */
+@import url('https://fonts.googleapis.com/css?family=Droid+Serif:400,700|Roboto:400,700');
+
+/*!
+ *  Font Awesome 4.6.3 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+@import url('font-awesome.min.css');
+
+
+/* ----------------------------------------------------------------------------- */
+/* --- 1. DOCUMENT SETUP
+/* ----------------------------------------------------------------------------- */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    letter-spacing: 1px;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+textarea:focus, input:focus, a:focus, a:visited, *:focus {
+    outline: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ----------------------------------------------------------------------------- */
+/* --- 2. Typography
+/* ----------------------------------------------------------------------------- */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Droid Serif', serif;
+    font-weight: 700;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: 3.998em;
+    line-height: 1.2
+}
+
+h2 {
+    font-size: 2.827em;
+    line-height: 1.3;
+    margin: 4px 0 10px;
+}
+
+h3 {
+    font-size: 1.999em;
+    line-height: 1.4;
+}
+
+h4 {
+    font-size: 1.414em;
+    line-height: 1.5;
+    margin: 12px 0 10px;
+}
+
+h5 {
+    font-size: 1em;
+    line-height: 1.3;
+}
+
+p {
+    margin: 20px 0 10px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    font-size: 0.93em;
+}
+
+/* Option box */
+
+.option-box {
+    position: fixed;
+    top: 50px;
+    left: -255px;
+    width: 255px;
+    background: #fff;
+    padding: 15px;
+    z-index: 999;
+    color: #333 !important;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    border: 3px solid;
+}
+
+.option-box .open-close {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff !important;
+    position: absolute;
+    top: -3px;
+    right: -40px;
+    cursor: pointer;
+}
+
+.option-box > div {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.themes span {
+    height: 40px;
+    margin: 2px;
+    line-height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    float: left;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #999;
+}
+
+.black {
+    background: #222;
+}
+
+.white {
+    background: #fff;
+    color: #222 !important;
+}
+
+.colors span {
+    float: left;
+    margin: 3px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+}
+
+.red {
+    background: #ea1e31;
+}
+
+.orange {
+    background: #d86a39;
+}
+
+.blue {
+    background: #1f9cbd;
+}
+
+.green {
+    background: #1b9800;
+}
+
+.purple {
+    background: #874fe8;
+}
+
+.brown {
+    background: #947943;
+}
+
+
+/* ----------------------------------------------------------------------------- */
+/* --- 3. Basics
+/* ----------------------------------------------------------------------------- */
+
+
+/* Reset */
+body section {
+    padding: 80px 0;
+}
+
+.section-title {
+    text-align: center;
+}
+
+.section-title .fa{
+    display: block;
+}
+
+.quote {
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 60px;
+}
+
+.quote:before, .quote:after {
+    content: "-";
+}
+
+.padding-0 {
+    padding: 0 !important;
+}
+
+.left-230 {
+    margin-left: 230px;
+    overflow: hidden;
+}
+
+.form-control,
+.pagination>li>a, .pagination>li>span {
+    background: transparent;
+}
+
+.form-control:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.breadcrumb>li {
+    display: inline;
+}
+
+.container-wide {
+    max-width: 90%;
+}
+
+.classy-btn {
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+.classy-btn:hover {
+    border: 1px solid;
+}
+
+blockquote {
+    background: #eee;
+}
+
+/* Social menu icons */
+
+.social-media ul {
+    margin: 0;
+}
+
+.social-media {
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    z-index: 99;
+}
+
+.social-media a, .open-social {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    margin: 10px 0;
+    border-radius: 50%;
+    text-align: center;
+    z-index: 99;
+    background: #eee;
+}
+
+.open-social {
+    z-index: 999;
+    cursor: pointer;
+    width: 53px;
+    height: 53px;
+    top: -2px;
+    right: -2px;
+}
+
+/* Loading page */
+
+.loading-page {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 9999;
+    text-align: center;
+    background: #fff;
+}
+
+.loading-page h5 {
+    font-weight: 400;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 45%;
+}
+
+/* ----------------------------------------------------------------------------- */
+/* --- 4. Profile Section
+/* ----------------------------------------------------------------------------- */
+
+.profile {
+    background-size: cover;
+    color: #fff;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.profile .profile-bg-color {
+    min-height: 100vh;
+}
+
+.profile .container-fluid {
+    padding: 15px;
+}
+
+.ques-link .fa, .ques-link a {
+    color: rgba(0, 0, 0, 0.4);
+    font-weight: 700;
+}
+
+.profile h1 span {
+    font-weight: 400;
+    font-size: 0.9em;
+}
+
+.profile h4 {
+    background: #fff;
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.profile ul li a {
+    transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+    padding: 10px;
+    border: 1px solid;
+    margin: 5px 0;
+    font-size: 0.85em;
+}
+
+.profile ul li:last-child a {
+    background: rgba(17, 17, 17, 0.3);
+}
+
+.info {
+    margin-top: 25%;
+    padding-bottom: 10%;
+}
+
+.socail-links {
+    text-align: center;
+    margin: 10px auto;
+    padding: 5px 0;
+}
+
+.socail-links ul {
+    margin: 0;
+}
+
+.socail-links ul li a {
+    padding: 5px;
+}
+
+/* ----------------------------------------------------------------------------- */
+/* --- 5. Resume Section
+/* ----------------------------------------------------------------------------- */
+
+.resume h4 {
+    display: inline-block;
+    padding: 0 10px 10px 0;
+    border-bottom: 3px solid;
+}
+
+.resume .col-sm-4 > div {
+    margin-bottom: 40px;
+}
+
+.resume h4 .fa {
+    display: block;
+    font-size: 2.5em;
+}
+
+.employment-box,
+.education-box {
+    margin-bottom: 40px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+
+.employment-box h5,
+.education-box h5{
+    margin: 27px auto 15px;
+}
+
+.employment-box h6,
+.education-box h6,
+.certificates h6 {
+    color: #888;
+}
+
+.certificates li {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.about p::first-letter {
+    font-size: 3em;
+    float: left;
+    line-height: 1;
+    margin-right: 10px;
+    font-weight: 400;
+    font-family: 'Alegreya', serif;
+}
+
+
+.progress {
+    border-radius: 0;
+}
+
+.progress-bar {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-weight: 700;
+}
+
+/* ----------------------------------------------------------------------------- */
+/* --- 6. Portfolio Section
+/* ----------------------------------------------------------------------------- */
+
+#Container .mix{
+    display: none;
+    padding: 15px;
+}
+
+.portfolio-list-filter ul li h5 {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.portfolio-item {
+    padding: 10px;
+}
+
+.portfolio-item h5 {
+    text-align: center;
+}
+
+.portfolio-item-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-item-links {
+    position: absolute;
+    top: 0;
+    z-index: 9;
+    left: 0;
+    right: 0;
+    text-align: center;
+    height: 100%;
+    background: rgba(34, 34, 34, 0.51);
+    vertical-align: middle;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.portfolio-item-links ul {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -10%;
+    opacity: 0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+.portfolio-item-links ul li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 1.2em;
+}
+
+.portfolio-item:hover .portfolio-item-links {
+    opacity: 1;
+}
+
+.portfolio-item:hover .portfolio-item-links ul {
+    opacity: 1;
+    top: 45%;
+}
+
+.portfolio-gallery-post {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+
+    -webkit-column-gap: 0;
+    -moz-column-gap: 0;
+    column-gap: 0;
+}
+
+.portfolio-item-post {
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+}
+
+.portfolio .title {
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.portfolio .more-post {
+    margin-top: 20px;
+}
+
+.owl-left, .owl-right {
+    cursor: pointer;
+}
+
+.owl-nav {
+    display: none;
+}
+
+
+/* ----------------------------------------------------------------------------- */
+/* --- 7. Testimonials Section
+/* ----------------------------------------------------------------------------- */
+
+.testimonials-quotes .fa {
+    display: inline-block;
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+
+.testimonials .carousel-indicators {
+    position: relative;
+    top: 10px
+}
+
+.testimonials .carousel-indicators li {
+    border: 3px solid;
+}
+
+.testimonials-content p {
+    margin-bottom: 26px;
+}
+
+.testimonials-content p:before {
+    font-family: "FontAwesome";
+    content: "\f10d";
+}
+
+.testimonials-content p:after {
+    font-family: "FontAwesome";
+    content: "\f10e";
+}
+
+.testimonials-box {
+    max-width: 55%;
+    margin: 10px auto;
+}
+
+/* ----------------------------------------------------------------------------- */
+/* --- 8. Blog Section
+/* ----------------------------------------------------------------------------- */
+
+.post,
+.post-page {
+    margin-bottom: 35px;
+    padding: 15px 0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+.post:hover .share-post {
+    top: 40%;
+}
+
+.post-thumbnail {
+    position: relative;
+    overflow: hidden;
+}
+
+.share-post {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -70px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+.share-post .socail-links {
+    background: transparent;
+}
+
+.share-post .socail-links ul li a {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    line-height: 30px;
+    padding: 0;
+    text-align: center;
+}
+
+.more-post a {
+    padding: 10px 20px;
+}
+
+/* ----------------------------------------------------------------------------- */
+/* --- 9. Contact Section
+/* ----------------------------------------------------------------------------- */
+
+.contact-details > ul li, .contact-details ul li ul {
+    margin: 5px auto;
+}
+
+.contact-details ul li .fa {
+    display: inline-block;
+    width: 20px;
+}
+
+.googleMap {
+    height: 333px;
+    margin: 10px auto;
+}
+
+/* ----------------------------------------------------------------------------- */
+/* --- 10. Navigation
+/* ----------------------------------------------------------------------------- */
+
+.navigation {
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    top: 0;
+    width: 230px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    height: 100%;
+}
+
+.nav-big-screen-close {
+    left: -230px;
+}
+
+.nav-list ul li a:focus {
+    background: none;
+}
+
+.nav-list ul li input {
+    color: #fff;
+}
+
+.nav-content {
+    overflow: hidden;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.nav-list ul {
+    padding: 15px;
+}
+
+
+.nav-list ul li {
+    padding: 5px;
+    text-align: right;
+}
+
+.nav-list ul li:not(:last-child) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+.nav-list ul li a {
+    font-size: 0.8em;
+    text-transform: capitalize;
+    position: static;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.nav-open {
+    position: absolute;
+    right: -40px;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 999;
+}
+
+/* ----------------------------------------------------------------------------- */
+/* --- 11. Blog page
+/* ----------------------------------------------------------------------------- */
+
+#blog-page section{
+    padding: 50px 0;
+}
+
+.breadcrumb>.active {
+    font-weight: 400;
+}
+
+.pagination>li>a {
+    color: #333;
+    border: none;
+}
+
+.main-blog > h3 {
+    color: #666666;
+}
+
+.small-menu a {
+    display: inline-block;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.breadcrumb>li+li:last-of-type:before {
+    content: "";
+    display: none;
+}
+
+/* ----------------------------------------------------------------------------- */
+/* --- 12. Single post page
+/* ----------------------------------------------------------------------------- */
+
+
+.single-post.post:hover {
+    background: none;
+}
+
+.breadcrumb>li+li:last-of-type:before {content: "";display: none;}
+
+.single-post .meta,
+.single-post .post-content,
+.comments .comment-content header {
+    border-bottom: 1px solid #ddd;
+}
+
+.single-post .meta .fa {
+    color: #cacaca;
+    margin-right: 5px;
+}
+
+.single-post .post-content {
+    background: #fff;
+    margin: -20px 10px 10px;
+    padding: 10px;
+    position: relative;
+}
+
+.tags {
+    border-top: 1px solid #ddd;
+}
+
+.tags li {
+    padding: 0;
+    margin: 4px 1px;
+}
+
+.tags li a {
+    padding: 5px;
+    color: #fff;
+    font-size: 0.8em;
+}
+
+.comments .comment {
+    margin: 10px auto;
+    padding: 10px;
+}
+
+.comments .comment:hover {
+    background: #eee;
+}
+
+.comments .comments-list,
+.comments-list .comments-children {
+    list-style: none;
+}
+
+
+.comments .comment-content strong {
+    display: block;
+}
+
+.comments .comment-content p {
+    font-size: 0.9em;
+}
+
+.err-details h1 span {
+    display: inline-block;
+    font-size: 3em;
+    padding: 20px;
+}
+
+.err-details .err-0 {
+    background: #333;
+}
+
+/* ----------------------------------------------------------------------------- */
+/* --- 13. Plans Section
+/* ----------------------------------------------------------------------------- */
+
+.pricing-table {
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    border: 3px solid #ddd;
+    border-radius: 5px;
+}
+
+.pricing-table li:not(:first-child):not(:nth-child(2)):not(:last-child) {
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.11);
+    margin-bottom: 20px;
+}
+
+.pricing-table li > .fa {
+    display: block;
+    height: 200px;
+    line-height: 200px;
+}
+
+.pricing-table h4:before, .pricing-table h4:after {
+    content: "-";
+}
+
+.pricing-table .price {
+    font-size: 1.5em;
+}
+
+.pricing-table .btn {
+    display: block;
+    border-radius: 0;
+}
+
+.pricing-table .classy-btn:hover {
+    background: transparent;
+}
+
+/* ----------------------------------------------------------------------------- */
+/* --- 14. Faqs Section
+/* ----------------------------------------------------------------------------- */
+
+
+.faqs .section-title span .fa {
+    display: inline-block;
+}
+
+.question {
+    padding: 10px;
+    background: #ddd;
+    margin: 0 auto 5px;
+}
+
+.faqs .question header .fa {
+    display: inline-block;
+    text-align: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    line-height: 30px;
+    border: 1px dashed;
+    font-size: 0.7em;
+}
+
+.faqs .question header h4 {
+    margin: 0 0 5px;
+    padding: 5px;
+    border-bottom: 1px dashed;
+    font-size: 1.3em;
+}
+
+.faqs .question .answer {
+    margin: 0;
+    padding: 10px;
+}
